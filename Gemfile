@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 # Added Gems
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+gem 'ratchet-sass'
 
 group :development do
   gem 'sqlite3'
