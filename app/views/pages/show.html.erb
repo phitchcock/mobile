@@ -1,4 +1,8 @@
-<h1><%= @page.title %></h1>
+<header class="bar bar-nav">
+  <%= link_to '', :back, class: "icon icon-left-nav pull-left" %>
+  <a class="icon icon-compose pull-right"></a>
+  <h1 class="title"><%= @page.title %></h1>
+</header>
 
 <%#= link_to 'edit', edit_site_page_path(@page) %>
 <%#= link_to 'destroy', site_page_path(@site), method: :delete, data: {confirm: 'really'} %>

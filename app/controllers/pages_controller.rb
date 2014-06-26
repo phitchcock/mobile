@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   
-  layout 'mobile'
+  layout 'mobile', only: [:index, :show]
 
   before_action :set_site
   before_action :set_page, only: [:show, :edit, :update, :destroy]
