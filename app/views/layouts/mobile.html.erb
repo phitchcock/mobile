@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>MobileSms</title>
-  <%= stylesheet_link_tag    'mobile', media: 'all' %>
-  <%= javascript_include_tag 'mobile' %>
+  <%= stylesheet_link_tag    'mobile', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'mobile', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
 

@@ -1,7 +1,20 @@
-<h1>Pages Index</h1>
+<header class="bar bar-nav">
+  <a class="icon icon-left-nav pull-left"></a>
+  <a class="icon icon-compose pull-right"></a>
+  <h1 class="title">Pages Index</h1>
+</header>
 
-<% @pages.each do |page| %>
-  <p><%= link_to page.title, [@site, page] %></p>
-<% end %>
-
-<%= link_to 'new', new_site_page_path %>
+<div class="content">
+  <div class="content-padded">
+    <div class="card">
+      <ul class="table-view">
+        <% @pages.each do |page| %>
+          <li class="table-view-cell">
+            <%= link_to page.title, [@site, page], class: "navigate-right" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <%= link_to 'new', new_site_page_path, class: 'btn btn-primary btn-block btn-outlined' %>
+  </div>
+</div>
