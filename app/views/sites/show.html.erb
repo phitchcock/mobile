@@ -1,0 +1,4 @@
+<h1><%= @site.title %></h1>
+
+<%= link_to 'edit', edit_site_path(@site) %>
+<%= link_to 'destroy', site_path(@site), method: :delete, data: {confirm: 'really'} %>

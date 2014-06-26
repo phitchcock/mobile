@@ -1,0 +1,7 @@
+<h1>Index</h1>
+
+<% @sites.each do |site| %>
+  <p><%= link_to site.title, site %></p>
+<% end %>
+
+<%= link_to 'new', new_site_path %>
