@@ -1,11 +1,13 @@
 <header class="bar bar-nav">
-  <a class="icon icon-left-nav pull-left"></a>
-  <a class="icon icon-compose pull-right"></a>
-  <h1 class="title">Pages Index</h1>
+  <%= link_to '', site_path(@site), class: "icon icon-left-nav pull-left" %>
+  <h1 class="title"><%= @site.title %></h1>
 </header>
 
 <div class="content">
   <div class="content-padded">
+    <div class="center">
+      <%= image_tag 'http://placehold.it/250x250' %>
+    </div>
     <div class="card">
       <ul class="table-view">
         <% @pages.each do |page| %>
