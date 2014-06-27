@@ -1,7 +1,15 @@
 <h1>Index</h1>
+<div class="row">
 
-<% @sites.each do |site| %>
-  <p><%= link_to site.title, site %></p>
-<% end %>
-
+  <% @sites.each do |site| %>
+    <div class="col-md-2">
+     <div class="thumbnail">
+      <%= image_tag 'http://placehold.it/250x250' %>
+       <h5><%= link_to site.title, site %></h5>
+       <%= link_to 'edit', edit_site_path(site), class: 'btn btn-sm btn-primary' %>
+       <%= link_to 'destroy', site_path(site), method: :delete, data: {confirm: 'really'}, class: 'btn btn-sm btn-default' %>
+     </div>
+    </div>
+  <% end %>
+</div>
 <%= link_to 'new', new_site_path %>
