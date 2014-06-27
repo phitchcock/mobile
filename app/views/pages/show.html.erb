@@ -4,5 +4,12 @@
   <h1 class="title"><%= @page.title %></h1>
 </header>
 
+<div class="content">
+  <div class="content-padded">
+    <h5>Info</h5>
+    <p><%= @page.body %></p>
+  </div>
+</div>
+
 <%#= link_to 'edit', edit_site_page_path(@page) %>
 <%#= link_to 'destroy', site_page_path(@site), method: :delete, data: {confirm: 'really'} %>
